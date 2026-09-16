@@ -1,24 +1,24 @@
 public class Engineer extends Employee {
 
-    private String specialization;
+    private int Overtime;
 
-    public Engineer(String name, int age, double salary, String specialization) {
-        super(name, age, salary);
-        this.specialization = specialization;
+    public Engineer(String name, int age, double salary,String address,String gender, int Overtime) {
+        super(name, age, salary,address,gender);
+        this.Overtime = Overtime;
     }
 
-    public String getSpecialization() {
-        return specialization;
+    public int getOvertime() {
+        return Overtime;
     }
 
-    public void setSpecialization(String specialization) {
-        this.specialization = specialization;
+    public void setOvertime(int Overtime) {
+        this.Overtime = Overtime;
     }
 
     @Override
     public void display() {
         System.out.println("\n--- Engineer ---");
         super.display();
-        System.out.println("Specialization: " + specialization);
+        System.out.println("Overtime: " + Overtime);
     }
 }
