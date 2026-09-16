@@ -43,7 +43,7 @@ public class Program {
     }
 
 
-    // ================= ADD EMPLOYEE MENU =================
+// EMPLOYEE MENU 
 
     public static void addEmployeeMenu() {
 
@@ -85,7 +85,7 @@ public class Program {
     }
 
 
-    // ================= ADD MANAGER =================
+    // ADD MANAGER 
 
     public static void addManager() {
 
@@ -102,18 +102,24 @@ public class Program {
 
         System.out.print("Enter Salary: ");
         double salary = ConsoleInput.getDouble();
+        
+        System.out.print("Enter Address: ");
+        String address = ConsoleInput.getString();
+        
+        System.out.print("Enter Gender: ");
+        String gender = ConsoleInput.getString();
 
-        System.out.print("Enter Bonus: ");
-        double bonus = ConsoleInput.getDouble();
+        System.out.print("Enter Hra: ");
+        double hra = ConsoleInput.getDouble();
 
-        employees[count] = new Manager(name, age, salary, bonus);
+        employees[count] = new Manager(name, age, salary,address,gender, hra);
         count++;
 
         System.out.println("Manager added successfully!");
     }
 
 
-    // ================= ADD ENGINEER =================
+    // ADD ENGINEER 
 
     public static void addEngineer() {
 
@@ -130,18 +136,24 @@ public class Program {
 
         System.out.print("Enter Salary: ");
         double salary = ConsoleInput.getDouble();
+        
+        System.out.print("Enter Address: ");
+        String address = ConsoleInput.getString();
+        
+        System.out.print("Enter Gender: ");
+        String gender = ConsoleInput.getString();
 
-        System.out.print("Enter Specialization: ");
-        String specialization = ConsoleInput.getString();
+        System.out.print("Enter Overtime: ");
+        int Overtime = ConsoleInput.getInt();
 
-        employees[count] = new Engineer(name, age, salary, specialization);
+        employees[count] = new Engineer(name, age, salary,address,gender, Overtime);
         count++;
 
         System.out.println("Engineer added successfully!");
     }
 
 
-    // ================= ADD SALES PERSON =================
+    // ADD SALES PERSON 
 
     public static void addSalesPerson() {
 
@@ -158,18 +170,24 @@ public class Program {
 
         System.out.print("Enter Salary: ");
         double salary = ConsoleInput.getDouble();
+        
+        System.out.print("Enter Address: ");
+        String address = ConsoleInput.getString();
+        
+        System.out.print("Enter Gender: ");
+        String gender = ConsoleInput.getString();
 
         System.out.print("Enter Commission: ");
         double commission = ConsoleInput.getDouble();
 
-        employees[count] = new SalesPerson(name, age, salary, commission);
+        employees[count] = new SalesPerson(name, age, salary,address,gender, commission);
         count++;
 
         System.out.println("Sales Person added successfully!");
     }
 
 
-    // ================= DISPLAY MENU =================
+    // DISPLAY MENU 
 
     public static void displayMenu() {
 
@@ -298,7 +316,7 @@ public class Program {
     }
 
 
-    // ================= SORT MENU =================
+    //  SORT MENU 
 
     public static void sortMenu() {
 
@@ -350,7 +368,7 @@ public class Program {
     }
 
 
-    // ================= DISPLAY BY CATEGORY =================
+    //  DISPLAY BY CATEGORY 
 
     public static void displayManagers() {
 
@@ -406,7 +424,7 @@ public class Program {
     }
 
 
-    // ================= SORT ASCENDING =================
+    //  SORT ASCENDING 
 
     public static void sortAscending() {
 
@@ -431,7 +449,7 @@ public class Program {
     }
 
 
-    // ================= SORT DESCENDING =================
+    //  SORT DESCENDING 
 
     public static void sortDescending() {
 
