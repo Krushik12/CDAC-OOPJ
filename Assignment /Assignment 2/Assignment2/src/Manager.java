@@ -1,24 +1,24 @@
 public class Manager extends Employee {
 
-    private double bonus;
+    private double hra;
 
-    public Manager(String name, int age, double salary, double bonus) {
-        super(name, age, salary);
-        this.bonus = bonus;
+    public Manager(String name, int age, double salary,String address,String gender, double hra) {
+        super(name, age, salary,address,gender);
+        this.hra = hra;
     }
 
-    public double getBonus() {
-        return bonus;
+    public double gethra() {
+        return hra;
     }
 
-    public void setBonus(double bonus) {
-        this.bonus = bonus;
+    public void sethra(double hra) {
+        this.hra = hra;
     }
 
     @Override
     public void display() {
         System.out.println("\n--- Manager ---");
         super.display();
-        System.out.println("Bonus: " + bonus);
+        System.out.println("Hra: " + hra);
     }
 }
