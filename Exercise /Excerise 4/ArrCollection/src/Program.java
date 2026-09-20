@@ -48,7 +48,25 @@ public class Program {
         } else {
             System.out.println("Yellow is not present in the list.");
         }
-        
+        //Changes on according to 20-09-2026
+		
+		//sort
+		Collections.sort(colors);
+		System.out.println(colors);
+		
+		//copy array
+		
+		ArrayList<String> col = new ArrayList<>();
+		col.addAll(Collections.nCopies(colors.size(), ""));
+		Collections.copy(col, colors);
+		System.out.println(col);
+		//shuffle
+		Collections.shuffle(colors);
+		System.out.println(colors);
+		//reverse
+		Collections.reverse(colors);
+		System.out.println(colors);
+		
 		
 	}
 
